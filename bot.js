@@ -22,7 +22,7 @@ let statuses = [
 
 client.on('ready', () => {
     setInterval(function() {
-        let status = statuses[Math.floor(Math.random()*(statuses.length)]; 
+        let status = statuses[Math.floor(Math.random()*statuses.length)]; 
         client.user.setPresence({ activity: { name: status }, status: 'idle' }); 
     }, 10000); 
 });
