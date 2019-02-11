@@ -11,19 +11,19 @@ client.on('ready', () => {
 });
 
 
-const activities_list = [
-    "Message me for help!", 
-    "Developed by Kido#9203",
-    "You are my everything 💛", 
-    "Made with JavaScript and Python",
-    "Ibox cho mình đi các bạn 😀" 
+let statuses = [
+    'Message me for help!', 
+    'Developed by Kido#9203',
+    'You are my everything 💛', 
+    'Made with JavaScript and Python',
+    'Ibox cho mình đi các bạn 😀' 
     ]; 
     
 
 client.on('ready', () => {
-    setInterval(() => {
-        const index = Math.floor(Math.random() * (activities_list.length - 1) + 1); 
-        client.user.setPresence({ activity: { name: activities_list[index] }, status: 'idle' }); 
+    setInterval(function() {
+        let status = statuses[Math.floor(Math.random()*(statuses.length)]; 
+        client.user.setPresence({ activity: { name: status }, status: 'idle' }); 
     }, 10000); 
 });
 
