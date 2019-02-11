@@ -17,7 +17,8 @@ client.on('ready', () => {
     client.user.setPresence({
         game: {
             name: 'Ibox cho mình đi các bạn 😀 ; Message me for help 💛',
-            type: "WATCHING"
+            type: "STREAMING",
+            url: "https://www.twitch.tv/kidoooooooooooo"
         }
     });
 });
