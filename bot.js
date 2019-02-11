@@ -23,8 +23,8 @@ const activities_list = [
 client.on('ready', () => {
     setInterval(() => {
         const index = Math.floor(Math.random() * (activities_list.length - 1) + 1); 
-        client.user.setStatus(activities_list[index]); 
-    }, 20000); 
+        client.user.setPresence({ activity: { name: activities_list[index] }, status: 'idle' }); 
+    }, 10000); 
 });
 
  
