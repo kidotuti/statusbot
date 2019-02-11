@@ -9,22 +9,17 @@ client.on('ready', () => {
     console.log('I am ready! Kido');
 
 });
-
-
-let statuses = [
-    'Message me for help!', 
-    'Developed by Kido#9203',
-    'You are my everything 💛', 
-    'Made with JavaScript and Python',
-    'Ibox cho mình đi các bạn 😀' 
-    ]; 
     
 
+
 client.on('ready', () => {
-    setInterval(function() {
-        let status = statuses[Math.floor(Math.random()*statuses.length)]; 
-        client.user.setPresence({ activity: { name: status }, status: 'idle' }); 
-    }, 10000); 
+    client.user.setStatus('idle')
+    client.user.setPresence({
+        game: {
+            name: 'Ibox cho mình đi các bạn 😀 ; Message me for help 💛',
+            type: "WATCHING"
+        }
+    });
 });
 
  
