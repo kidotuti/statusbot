@@ -13,10 +13,10 @@ client.on('ready', () => {
 
 
 client.on('ready', () => {
-    client.user.setStatus('idle')
+    client.user.setStatus('online')
     client.user.setPresence({
         game: {
-            name: 'Ibox cho mình đi các bạn 😀 ; Message me for help 💛',
+            name: 'Ibox cho mình đi các bạn 😀 mình rep hết.',
             type: "STREAMING",
             url: "https://www.twitch.tv/kidoooooooooooo"
         }
